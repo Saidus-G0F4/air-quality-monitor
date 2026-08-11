@@ -1,0 +1,27 @@
+# --- ESP-IDF / firmware ---
+firmware/build/
+firmware/sdkconfig.old
+managed_components/
+dependencies.lock
+*.pyc
+
+# --- Go / backend ---
+backend/bin/
+backend/*.exe
+backend/**/*.test
+backend/coverage.out
+
+# --- Secrets / config locale ---
+.env
+infra/.env
+**/secrets.h
+**/wifi_credentials.h
+
+# --- Éditeurs / OS ---
+.vscode/
+.idea/
+.DS_Store
+
+# --- Docker ---
+infra/grafana/data/
+infra/influxdb/data/
